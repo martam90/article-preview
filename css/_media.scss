@@ -1,0 +1,70 @@
+@media (min-width: 640px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .drawers-img {
+      border-radius: 16px 0 0 16px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 0 16px 16px 0;
+
+      .text {
+        border-radius: 0 16px 16px 0;
+      }
+
+      .avatar {
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 0 16px 16px 0;
+
+        &.active {
+          display: none;
+        }
+
+        .avatar-details {
+          padding-left: $pad - 10;
+        }
+
+        .btn-right {
+          display: flex;
+          justify-content: flex-end;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .state {
+    display: none;
+    max-width: 250px;
+    max-height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    &.active {
+      display: flex;
+      border-radius: 16px;
+      transform: translate(33%, -175%);
+    }
+
+    &::after {
+      content: "\25BC";
+      font-size: $fontsize + 20;
+      color: $verydark;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    .icon-btn {
+      display: none;
+    }
+  }
+}

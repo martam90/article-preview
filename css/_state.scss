@@ -1,0 +1,56 @@
+.overlay {
+  height: 0;
+}
+
+.state {
+  position: relative;
+  display: none;
+  align-items: center;
+  padding: $pad - 10;
+  background-color: $verydark;
+  border-radius: 0 0 16px 16px;
+
+  &.active {
+    transform: translateY(-100%);
+    display: flex;
+  }
+
+  .header-small {
+    letter-spacing: 3px;
+    margin: 0;
+    color: $darkblue;
+    text-transform: uppercase;
+  }
+
+  .social-btns {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+
+    .social-btn {
+      flex: 1;
+      align-self: center;
+      padding-left: $pad - 10;
+    }
+  }
+
+  .btn-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+}
+
+.icon-btn {
+  background-color: $lblue;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: $pad - 20;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $gblue;
+  }
+}
