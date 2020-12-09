@@ -48,9 +48,11 @@
   outline: none;
   border-radius: 50%;
   padding: $pad - 20;
+  transition: ease-in-out 500ms;
 
   &:hover {
     cursor: pointer;
     background-color: $gblue;
+    transition: ease-in-out 500ms;
   }
 }

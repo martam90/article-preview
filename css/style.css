@@ -17,6 +17,16 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
   background-color: #ecf2f8;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper {
@@ -28,7 +38,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 650px;
-  margin: 0 auto;
   background-color: #fff;
   border-radius: 16px;
 }
@@ -58,6 +67,7 @@ body {
 .wrapper .content .text .text-details {
   opacity: 0.8;
   line-height: 1.8;
+  margin-bottom: 0;
 }
 
 .wrapper .content .avatar {
@@ -172,11 +182,15 @@ body {
   outline: none;
   border-radius: 50%;
   padding: 10px;
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
 }
 
 .icon-btn:hover {
   cursor: pointer;
   background-color: #9eafc2;
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
 }
 
 @media (min-width: 640px) {
